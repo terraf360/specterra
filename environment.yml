@@ -1,0 +1,27 @@
+name: specterra
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python
+  - python=3.10
+  
+  # Core científico
+  - numpy>=1.20.0
+  - scipy>=1.6.0
+  
+  # Geoespacial
+  - gdal>=3.7.0
+  - rasterio>=1.2.0
+  
+  # Visualización
+  - matplotlib>=3.3.0
+  
+  # Jupyter (opcional)
+  - jupyter
+  - jupyterlab
+  
+  # Pip packages
+  - pip
+  - pip:
+    - -e .  # Instala specterra en modo desarrollo
